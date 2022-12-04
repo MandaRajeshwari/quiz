@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>JAVA Quiz page</title>
+<style>
+body{
+background-image: url("https://www.leadquizzes.com/wp-content/uploads/2019/02/New-blog-graphic.jpg");
+font-family: cursive;
+font-size: x-large;
+}
+.btn{
+width : 150px;
+padding : 10px;
+margin: 5px;
+border-radius: 11px;
+font-size: 18px;
+    border : 1px solid #999;
+    background:  rgb(243, 19, 19);
+    cursor: pointer;
+
+}
+.ques{
+    width : 80%;
+    box-shadow: 5px 2px 5px 2px rgba(0, 0.3, 0, 0.3);
+    background: #fff;
+    padding: 15px;
+         
+}
+</style>
+</head>
+<body>
+    <div class="ques">
+        Q1.Who invented Java Programming?<br>
+        <input type="radio" name="xxx">Guido van Rossum<br>
+        <input type="radio" id="correct" name="xxx">James Gosling<br>
+        <input type="radio" name="xxx"> Dennis Ritchie<br>
+        <input type="radio" name="xxx"> Bjarne Stroustrup<br>
+        
+        Q2.Which statement is true about Java?<br>
+        <input type="radio" name="xx">Java is a sequence-dependent programming language<br>
+        <input type="radio" name="xx">Java is a code dependent programming language<br>
+        <input type="radio" name="xx">Java is a platform-dependent programming language<br>
+        <input type="radio" id="correct1" name="xx">Java is a platform-independent programming language<br>
+        
+        Q3.Which component is used to compile, debug and execute the java programs?<br>
+        <input type="radio"  name="x">JRE<br>
+        <input type="radio"   name="x">JIT<br>
+        <input type="radio" id="correct2"  name="x">JDK<br>
+        <input type="radio"  name="x">JVM<br>
+        
+        Q4.Which one of the following is not a Java feature?<br>
+        <input type="radio"  name="xxx1">object-oriented<br>
+        <input type="radio"  id="correct3"  name="xxx1">use of pointers<br>
+        <input type="radio"  name="xxx1">Portable<br>
+        <input type="radio"  name="xxx1">Dynamic and Extensible<br>
+        
+            Q5. Which of these cannot be used for a variable name in Java?<br>
+        <input type="radio"  name="xx1">identifier & keyword<br>
+        <input type="radio"  name="xx1">identifier<br>
+        <input type="radio" id="correct4"  name="xx1">keyword<br>
+        <input type="radio"  name="xx1">none of the mentioned<br>
+         Q6.What is the extension of java code files?<br>
+        <input type="radio" name="xxx">.js<br>
+        <input type="radio" name="xxx">.txt<br>
+        <input type="radio" name="xxx">.class<br>
+        <input type="radio" id="correct5" name="xxx">.java<br>
+        
+        Q7.Which of the following is not an OOPS concept in Java?<br>
+        <input type="radio" name="x1">Polymorphism<br>
+        <input type="radio" name="x1">Inheritance<br>
+        <input type="radio" id="correct6" name="x1">Compilation<br>
+        <input type="radio" name="x1">Encapsulation
+        answer:c<br>
+        
+        Q8.What is not the use of "this" keyword in Java?<br>
+        <input type="radio"   name="x2">Referring to the instance variable when a local variable has the same name<br>
+        <input type="radio"   name="x2" >Passing itself to the method of the same class<br>
+        <input type="radio"   name="x2">Passing itself to another method<br>
+        <input type="radio" id="correct7" name="x2"><br>
+        
+        Q9.Which of the following is a type of polymorphism in Java Programming?<br>
+        <input type="radio" name="xxx2">Multiple polymorphism<br>
+        <input type="radio" name="xxx2" >Multilevel polymorphism<br>
+        <input type="radio" id="correct8" name="xxx2">Compile time polymorphism<br>
+        <input type="radio" name="xxx2">Execution time polymorphism<br>
+        
+        Q10.Which of the below is not a Java Profiler?<br>
+        <input type="radio"  name="xxx3"> JProfiler<br>
+        <input type="radio"  name="xxx3" >Eclipse Profiler<br>
+        <input type="radio" id="correct9"  name="xxx3" > JVM<br>
+        <input type="radio"  name="xxx3"> JConsole<br>
+            </div>
+    <form>
+    <center><input type="submit" value="SubmitQuiz" onclick="result()" class="btn"></center>
+    <center><button type="submit"nmethod='get' formaction="/subjects" class="btn">ExitQuiz</button></center>
+</form>
+    <script>
+
+    function result(){
+    var score = 0;
+    if(document.getElementById('correct').checked){
+    score++;
+    }  
+       if(document.getElementById('correct1').checked){
+    score++;
+    }
+    if(document.getElementById('correct2').checked){
+    score++;
+    }
+    if(document.getElementById('correct3').checked){
+    score++;
+    }
+    if(document.getElementById('correct4').checked){
+    score++;
+    }
+    if(document.getElementById('correct5').checked){
+    score++;
+    }
+    if(document.getElementById('correct6').checked){
+    score++;
+    }
+    if(document.getElementById('correct7').checked){
+    score++;
+    }
+    if(document.getElementById('correct8').checked){
+    score++;
+    }
+    if(document.getElementById('correct9').checked){
+    score++;
+    }
+    alert("Your Score is : " + score + "/10");
+    }
+   
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>C Quiz page</title>
+<style>
+body{
+    background-image: url("https://www.leadquizzes.com/wp-content/uploads/2019/02/New-blog-graphic.jpg");
+    font-family: cursive;
+    font-size: x-large;
+}
+.btn{
+width : 150px;
+padding : 10px;
+margin: 5px;
+border-radius: 11px;
+font-size: 18px;
+    border : 1px solid #999;
+    background: rgb(243, 19, 19);
+    cursor: pointer;
+
+}
+.ques{
+    width : 80%;
+    box-shadow: 5px 2px 5px 2px rgba(0, 0.3, 0, 0.3);
+    background: #fff;
+    padding: 15px;
+         
+}
+</style>
+</head>
+<body>
+    <div class="ques">
+        Q1.who is the father of C language?<br>
+          <input type="radio" name="x">Steve jobs<br>
+          <input type="radio" name="x">james Goslin<br>
+          <input type="radio" id="correct" name="x">Dennis Ritchie<br>
+          <input type="radio" name="x">Rasmus Lerdorf<br>
+         
+          Q2.Which of the following declaration is not supported by C language?<br>
+          <input type="radio" id="correct1" name="xx">String str;<br>
+          <input type="radio" name="xx">char *str;<br>
+          <input type="radio" name="xx" >float str = 3e2;<br>
+          <input type="radio" name="xx">Both "String str;" and "float str = 3e2;"<br>
+          
+          Q3.All keywords in C are in?<br>
+          <input type="radio" id="correct2" name="xxx">Lowercase letters<br>
+          <input type="radio" name="xxx">Uppercase letter<br>
+          <input type="radio" name="xxx">CamelCase letter<br>
+          <input type="radio" name="xxx">None of the above<br>
+         
+          Q4.What is an example of iteration in C?<br>
+          <input type="radio" name="xxxx">for<br>
+          <input type="radio" name="xxxx">while<br>
+          <input type="radio" name="xxxx">do-while<br>
+          <input type="radio" id="correct3" name="xxxx">all of the mentioned<br>
+         
+          Q5.What is #include <stdio.h>?<br>
+          <input type="radio" id="correct4" name="y">Preprocessor directive<br>
+          <input type="radio" name="y">Inclusion directive<br>
+          <input type="radio" name="y">File inclusion directive<br>
+          <input type="radio" name="y">None of the mentioned<br>
+         
+          Q6. Which of the following return-type cannot be used for a function in C?<br>
+          <input type="radio" name="yy">char*<br>
+          <input type="radio" name="yy">struct<br>
+          <input type="radio" name="yy">void<br>
+          <input type="radio" id="correct5" name="yy">none of the mentioned<br>
+         
+          Q7.Functions in C Language are always?<br>
+          <input type="radio"  name="yyy">internal<br>
+          <input type="radio" id="correct6" name="yyy">External<br>
+          <input type="radio" name="yyy" >Both<br>
+          <input type="radio" name="yyy">None<br>
+         
+          Q8.What is the sizeof(char) in a 32-bit C compiler?<br>
+          <input type="radio" name="yyyy">1 bit<br>
+          <input type="radio" name="yyyy">2 bits<br>
+          <input type="radio" name="yyyy">1 byte<br>
+          <input type="radio" id="correct7" name="yyyy">2 bytes<br>
+             
+          Q9.Which of the following are C preprocessors??<br>
+          <input type="radio" name="w">#ifdef<br>
+          <input type="radio" name="w">#define<br>
+          <input type="radio" name="w">#endif<br>
+          <input type="radio" id="correct8" name="w">#endif<br>
+         
+          Q10. What is the result of logical or relational expression in C??<br>
+          <input type="radio" name="wx">True or False<br>
+          <input type="radio" id="correct9" name="wx">0 or 1<br>
+          <input type="radio" name="wx">0 if an expression is false any positive umber if an expression is true<br>
+          <input type="radio" name="wx">None of the mentioned<br>
+  
+      </div>
+    <form>
+    <center><input type="submit" value="SubmitQuiz" class="btn" onclick="result()"></center>
+    <center><button type="submit" class="btn" method='get' formaction="/subjects">ExitQuiz</button></center>
+   </form>
+    <script>
+    function result(){
+    var score = 0;
+    if(document.getElementById('correct').checked){
+    score++;
+    }  
+       if(document.getElementById('correct1').checked){
+    score++;
+    }  
+    if(document.getElementById('correct2').checked){
+    score++;
+    }
+    if(document.getElementById('correct3').checked){
+    score++;
+    }
+    if(document.getElementById('correct4').checked){
+    score++;
+    }
+    if(document.getElementById('correct5').checked){
+    score++;
+    }
+    if(document.getElementById('correct6').checked){
+    score++;
+    }
+    if(document.getElementById('correct7').checked){
+    score++;
+    }
+    if(document.getElementById('correct8').checked){
+    score++;
+    }
+    if(document.getElementById('correct9').checked){
+    score++;
+    }
+    alert("Your Score is : " + score + "/10");
+    }
+   
+
+    </script>
+   
+</body>
+</html>

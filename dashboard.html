@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DASHBOARD</title>
+
+</head>
+
+<h1 style="color:darkturquoise;" align="center"><b>WELCOME TO</b></h1>
+<h1 style="color:darkturquoise;" align="center"><b>Kwizz</b></h1>
+<style>
+body{
+margin:  0;
+font-size: 40px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 900;
+background-image: url("https://www.siemens-energy.com/content/dam/applications/siemens-energy/master/en/product-services/energy/services/digital-services/digital-self-assessment/Digital_Self_Assessment-SEified/images/Background__horizontal.jpg");
+background-size: cover;
+}
+.btn{
+width : 301px;
+   padding : 10px;
+   margin: 5px;
+   border-radius: 11px;
+   font-size: 18px;
+        border : 1px solid #999;
+        background: rgb(42, 17, 233);
+        cursor: pointer;
+
+}
+    .home-box{
+    width : 400px;
+    background: #fff;
+    padding: 25px;
+    margin: 7% auto 0 ;
+    text-align: center;
+    }
+    .rr{
+    border-radius: 10px;
+    padding: 10px;
+    width:300px;
+    margin: 5px;
+    border : 1px solid #999;
+    }
+</style>
+<body>
+<div class = "home-box">
+<form method='get' action="/dashboardsubmit">
+<center>Nick name</center>
+  <input type="text" name=nickname placeholder="your username for quiz" class=rr required><br>
+  <button type = "submit"class="btn">Continue</button>
+  </form>
+</div>
+
+</body>
+</html>

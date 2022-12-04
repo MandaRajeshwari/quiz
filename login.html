@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Login page</title>
+        <style>
+            body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image:url('https://www.shutterstock.com/image-vector/vector-bluepurple-polygonal-plexus-background-260nw-1458679892.jpg') ;
+    background-size: cover;
+    background-position: center;
+}
+.login-form{
+    width: 300px;
+   background-image: url("https://i.pinimg.com/736x/90/f6/5f/90f65f08cec6b90e7e35c6f2ca9e995c.jpg");
+   padding: 20px;
+   margin: 8% auto;
+   text-align: center;
+}
+.login-form h1{
+    color: rgb(21, 245, 233);
+    margin-bottom:30px;
+
+}
+.input-box{
+    border: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+button{
+    color: rgb(237, 25, 25);
+    width: 100%;
+    padding: 10px;
+   border-radius: 20px;
+   font-size: 15px;
+   margin: 10px 0;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+.login-btn{
+   width : 301px;
+    padding : 10px;
+    margin: 5px;
+    border-radius: 11px;
+    font-size: 18px;
+    border : 1px solid #999;
+    background:  rgb(25, 25, 243);
+    cursor: pointer;
+}
+
+
+img{
+    width: 70px;
+    margin-top: 20px;
+   
+}
+</style>
+     
+    </head>
+    <body><br><br><br><br>
+       
+        <div class="login-form">
+            <img src="https://media.istockphoto.com/id/1095289632/vector/purple-user-icon-in-the-circle-a-solid-gradient.jpg?s=612x612&w=0&k=20&c=35BA2rH_fHDkiSlCyJXzvofllOyvNdc9V-VZzZQxzD4=">
+             <h1>Login</h1>
+             <form method='get' action="/loginsubmit">
+
+                <input type="email" class="input-box" placeholder="Your Email" name=username required><br>
+                <input type="password" class="input-box" placeholder="Your password" name=password required> <br>
+                <input type="submit" class="login-btn" value="submit"/>
+             </form>
+        </div>
+    </body>
+</html>

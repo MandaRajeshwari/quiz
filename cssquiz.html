@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>CSS Quiz page</title>
+<style>
+body{
+background-image: url("https://www.leadquizzes.com/wp-content/uploads/2019/02/New-blog-graphic.jpg");
+font-family: cursive;
+font-size: x-large;
+}
+.btn{
+width : 150px;
+padding : 10px;
+margin: 5px;
+border-radius: 11px;
+font-size: 18px;
+    border : 1px solid #999;
+    background:  rgb(243, 19, 19);
+    cursor: pointer;
+
+}
+.ques{
+         width : 80%;
+    box-shadow: 5px 2px 5px 2px rgba(0, 0.3, 0, 0.3);
+    background: #fff;
+    padding: 15px;
+         
+}
+</style>
+</head>
+<body>
+    <div class="ques">
+        Q1.What is CSS stands for?<br>
+        <input type="radio" id="correct" name="cq1">Cascading Style Sheets<br>
+        <input type="radio" name="cq1">Cascade Style Sheet<br>
+        <input type="radio" name="cq1">Color Style Sheets<br>
+        <input type="radio" name="cq1">Color Style Sheet<br>
+       
+        Q2.Inline styles are written within the _____ attribute.<br>
+        <input type="radio" id="correct1" name="cq2" >style<br>
+        <input type="radio" name="cq2">css<br>
+        <input type="radio" name="cq2">stylesheet<br>
+        <input type="radio" name="cq2">Both A. and B.<br>
+       
+        Q3.CSS comments are placed within the ______.<br>
+        <input type="radio" name="cq3">//<br>
+        <input type="radio" name="cq3"><! And !><br>
+        <input type="radio" name="cq3"><* and *><br>
+        <input type="radio" id="correct2" nmae="cq3">/* and */<br>
+       
+        Q4.Which property is used to define the text color?<br>
+        <input type="radio" id="correct3" name="cq4">color<br>
+        <input type="radio" name="cq4">text-color<br>
+        <input type="radio" name="cq4">font-color<br>
+        <input type="radio" name="cq4">Both A. and B.<br>
+       
+        Q5.Which property is used to define the background color?<br>
+        <input type="radio" id="correct4" nmae="cq5">background-color<br>
+        <input type="radio" name="cq5">bgcolor<br>
+        <input type="radio" name="cq5">bg-color<br>
+        <input type="radio" name="cq5">background<br>
+       
+        Q6. Which property is used to define the font of the element's text?<br>
+        <input type="radio" name="cq6">font<br>
+        <input type="radio" id="correct5" name="cq6">font-family<br>
+        <input type="radio" name="cq6">font-style<br>
+        <input type="radio" name="cq6">All of the above<br>
+       
+        Q7.To make a text italic, which CSS property is used?<br>
+        <input type="radio" name="cq7">font<br>
+        <input type="radio" id="correct6" name="cq7">font-style<br>
+        <input type="radio" name="cq7">font-family<br>
+        <input type="radio" name="cq7">All of the above<br>
+       
+        Q8.Which CSS property and value is used to center an element?<br>
+        <input type="radio" name="cq8" >text-align:center<br>
+        <input type="radio" id="correct7" name="cq8">align:center<br>
+        <input type="radio" name="cq8">text-align:middle<br>
+        <input type="radio" name="cq8">align:middle<br>
+           
+        Q9.Which CSS property is used to specify uppercase and lowercase letters<br>
+        <input type="radio" name="cq9">text-case<br>
+        <input type="radio" nmae="cq9">case<br>
+        <input type="radio" id="correct8" name="cq9">text-transform<br>
+        <input type="radio" name="cq9">text-casing<br>
+       
+        Q10.How many color names does CSS supports?<br>
+        <input type="radio" id="correct9" name="cq0">140<br>
+        <input type="radio" name="cq0">100<br>
+        <input type="radio" name="cq0">75<br>
+        <input type="radio" name="cq0">90<br>
+    
+        </div>
+    <form>
+    <center><input type="submit" value="SubmitQuiz" class="btn" onclick="result()"></center>
+    <center><button type="submit" method='get' formaction = "/subjects" class="btn">ExitQuiz</button></center>
+    </form>
+    <script>
+    function result(){
+    var score = 0;
+    if(document.getElementById('correct').checked){
+    score++;
+    }  
+       if(document.getElementById('correct1').checked){
+    score++;
+    }  
+    if(document.getElementById('correct2').checked){
+    score++;
+    }
+    if(document.getElementById('correct3').checked){
+    score++;
+    }
+    if(document.getElementById('correct4').checked){
+    score++;
+    }
+    if(document.getElementById('correct5').checked){
+    score++;
+    }
+    if(document.getElementById('correct6').checked){
+    score++;
+    }
+    if(document.getElementById('correct7').checked){
+    score++;
+    }
+    if(document.getElementById('correct8').checked){
+    score++;
+    }
+    if(document.getElementById('correct9').checked){
+    score++;
+    }
+    alert("Your score is:" + score + "/10");
+
+
+    }
+   
+
+    </script>
+   
+</body>
+</html>

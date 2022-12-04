@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Signup Page</title>
+
+<script>
+            function checkPassword(form) {
+                password1 = form.password1.value;
+                password2 = form.password2.value;
+                if (password1 != password2) {
+                    alert ("\nPassword did not match: Please try again...")
+                    return false;
+                }
+            }
+     </script>
+     <style>
+      body{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   background-image: url("https://www.shutterstock.com/image-vector/vector-bluepurple-polygonal-plexus-background-260nw-1458679892.jpg");
+   background-size: cover;
+   background-position: center;
+}
+.sign-up-form{
+width : 400px;
+box-shadow: 5px 2px 5px 2px rgba(0, 0.3, 0, 0.3);
+background-image: url("pic2.jpg");
+padding: 25px;
+margin: 7% auto 0 ;
+text-align: center;
+}
+.sign-up-form h1{
+color : rgb(25, 25, 243);
+margin-bottom: 25px;
+}
+.input-box{
+border-radius: 10px;
+padding: 10px;
+width:300px;
+margin: 5px;
+border : 1px solid #999;
+}
+.input-box1{
+width : 301px;
+padding : 10px;
+margin: 5px;
+border-radius: 11px;
+font-size: 18px;
+    border : 1px solid #999;
+    background: rgb(25, 25, 243);
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="sign-up-form">
+<h1 align="center">SIGN-UP</h1>
+<form method='get' action="/signupsubmit" onSubmit = "return checkPassword(this)">
+<input type="email" class="input-box" placeholder="your email" name=mail required><br><br>
+<input type="text" class="input-box" placeholder="your name" name= Name required><br><br>
+<input type="number" class="input-box" placeholder="Your mobile No." name=mobileNo required><br><br>
+<input type="password" class="input-box" placeholder="your password" name=password1 required><br><br>
+<input type="password" class="input-box" placeholder="Re-enter password" name=password2 required><br><br><br><br>
+<input type="submit" class="input-box1" name = Submit>
+</form>
+</div>
+</body>
+</html>

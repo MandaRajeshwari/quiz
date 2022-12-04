@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>HTML Quiz page</title>
+<style>
+body{
+background-image: url("https://www.leadquizzes.com/wp-content/uploads/2019/02/New-blog-graphic.jpg");
+font-family: cursive;
+font-size: x-large;
+}
+.btn{
+width : 150px;
+padding : 10px;
+margin: 5px;
+border-radius: 11px;
+font-size: 18px;
+    border : 1px solid #999;
+    background: rgb(243, 19, 19);
+    cursor: pointer;
+
+}
+.ques{
+    width : 80%;
+    box-shadow: 5px 2px 5px 2px rgba(0, 0.3, 0, 0.3);
+    background: #fff;
+    padding: 15px;
+         
+}
+</style>
+</head>
+
+<body>
+    <div class="ques">
+        Q1.What is Full form of HTML?<br>
+        <input type="radio" name="xxx">Hypertext makeup language<br>
+        <input type="radio" name="xxx">Hyper preprocessor<br>
+        <input type="radio" name="xxx">Hyperlink markup language<br>
+        <input type="radio" id="correct" name="xxx">Hypertext markup language<br>
+        
+        
+        Q2.Who is the father of HTML?<br>
+        <input type="radio" name="xx">Rasmus Lerdorf<br>
+        <input type="radio" id="correct1" name="xx">Tim Berners-Lee<br>
+        <input type="radio" name="xx" >Brendan Eich<br>
+        <input type="radio" name="xx">Sergey Brin<br>
+        
+        Q3.Which of the following is not the element associated with the HTML table layout?<br>
+        <input type="radio"  name="x">spanning<br>
+        <input type="radio"  name="x" >size<br>
+        <input type="radio"  name="x">alignment<br>
+        <input type="radio" id="correct2"  name="x">color<br>
+        
+        Q4.Which of the following is used to read an HTML page and render it?<br>
+        <input type="radio" name="xxx1">Web server<br>
+        <input type="radio" id="correct3" name="xxx1">Web browser<br>
+        <input type="radio" name="xxx1">Web network<br>
+        <input type="radio" name="xxx1">Web matrix<br>
+        
+        Q5.HTML is a subset of<br>
+        <input type="radio" id="correct4" name="xxx">SGML<br>
+        <input type="radio" name="xxx">SGMT<br>
+        <input type="radio" name="xxx">SGME<br>
+        <input type="radio" name="xxx">XHTML<br>
+        
+        Q6.What is the work of <address> element in HTML5?<br>
+        <input type="radio" id="correct5" name="xx1" >contains contact details for author<br>
+        <input type="radio" name="xx1">contains IP address<br>
+        <input type="radio" name="xx1">contains home address<br>
+        <input type="radio" name="xx1"> contains url<br>
+        
+        Q7.Which character is used to represent the closing of a tag in HTML?-<br>
+        <input type="radio" name="x1">\<br>
+        <input type="radio" name="x1">!<br>
+        <input type="radio" id="correct6" name="x1">/<br>
+        <input type="radio" name="x1">.<br>
+        
+        Q8.What is DOM in HTML?<br>
+        <input type="radio" id="correct7" name="x2">Convention for representing and interacting with objects in html documents<br>
+        <input type="radio" name="x2" >Language dependent application programming<br>
+        <input type="radio" name="x2">Hierarchy of objects in ASP.NET<br>
+        <input type="radio" name="x2">Application programming interface<br>
+        
+        Q9.How to create an ordered list in HTML?-<br>
+        <input type="radio" name="xxx2">ul<br>
+        <input type="radio" id="correct8" name="xxx2">ol<br>
+        <input type="radio"  name="xxx2">li<br>
+        <input type="radio" name="xxx2">i<br>
+        
+        Q10. Which of the following element is responsible for making the text italic in HTML?-<br>
+        <input type="radio" id="correct9"  name="xxx3">i<br>
+        <input type="radio"   name="xxx3">italic<br>
+        <input type="radio"   name="xxx3">it<br>
+        <input type="radio"  name="xxx3">pre<br>
+        </div>
+<form>
+    <center><input type="submit" value="SubmitQuiz" onclick="result()" class="btn"></center>
+    <center><button type="submit" method='get' formaction = "/subjects" class="btn">ExitQuiz</button></center>
+</form>
+    <script>
+    function result(){
+    var score = 0;
+    if(document.getElementById('correct').checked){
+    score++;
+    }  
+       if(document.getElementById('correct1').checked){
+    score++;
+    }
+    if(document.getElementById('correct2').checked){
+    score++;
+    }
+    if(document.getElementById('correct3').checked){
+    score++;
+    }
+    if(document.getElementById('correct4').checked){
+    score++;
+    }
+    if(document.getElementById('correct5').checked){
+    score++;
+    }
+    if(document.getElementById('correct6').checked){
+    score++;
+    }
+    if(document.getElementById('correct7').checked){
+    score++;
+    }
+    if(document.getElementById('correct8').checked){
+    score++;
+    }
+    if(document.getElementById('correct9').checked){
+    score++;
+    }
+    alert("Your Score is : " + score + "/10");
+    }
+   
+
+    </script>
+</body>
+</html>
